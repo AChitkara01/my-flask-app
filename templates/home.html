@@ -4,16 +4,15 @@
 {% block content %}
 <!-- Hero header section -->
 <header class="text-center bg-secondary text-white p-5">
-  <h1>Ritti Thaker</h1>
-  <p class="lead">Economics Master's Student | Data Analyst | Research Enthusiast</p>
+  <h1> Aashima Chitkara</h1>
+  <p class="lead">Economics Master's Student | Data Analyst | Research Enthusiast | Public Policy</p>
 </header>
 
 <!-- About Section -->
 <section id="about" class="container my-5">
   <h2>About Me</h2>
   <p>
-    Hello! I'm Ritti Thaker, a detail-oriented and analytical Economics Master's student at Ashoka University, passionate about applying data analytics and econometric models to decipher complex economic phenomena. I possess expertise in Python, STATA, and MATLAB, and have extensive experience in research, policy analysis, and handling large-scale datasets. Through my academic journey, I have explored courses like Microeconomics, Econometrics, and Global Finance, while gaining practical exposure through various research projects and internships. 
-    My experiences have allowed me to combine theoretical knowledge with hands-on application, making me proficient in data analysis, forecasting, and visualization. I thrive in dynamic environments where I can apply critical thinking and problem-solving skills to derive actionable insights from data.
+    Hello! I'm Aashima Chitkara,Master’s in Economics student at Ashoka University with experience in policy analysis, impact evaluation, and data analytics. Proficient in Python, Ms Excel and MATLAB, I enjoy applying quantitative methods to solve real-world economic challenges, particularly in urban development, financial inclusion, and public policy.
   </p>
 </section>
 
@@ -23,11 +22,11 @@
     <div class="row">
       {% for exp in experiences %}
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm" onclick="toggleDescription(this)">
+        <div class="card h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">{{ exp.title }}</h5>
             <!-- Initially hidden description -->
-            <p class="card-text description" style="display: none;">{{ exp.desc }}</p>
+            <p class="card-text description">{{ exp.desc }}</p>
           </div>
         </div>
       </div>
@@ -41,11 +40,11 @@
     <div class="row">
       {% for proj in projects %}
       <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card h-100 shadow-sm" onclick="toggleDescription(this)">
+        <div class="card h-100 shadow-sm" >
           <div class="card-body">
             <h5 class="card-title">{{ proj.title }}</h5>
             <!-- Initially hidden description -->
-            <p class="card-text description" style="display: none;">{{ proj.desc }}</p>
+            <p class="card-text description">{{ proj.desc }}</p>
           </div>
         </div>
       </div>
@@ -68,6 +67,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Send</button>
   </form>
-  <p>Email: <a href="mailto:rittithaker2314@gmail.com">rittithaker2314@gmail.com</a></p>
+  <p>Email: <a href="mailto:aashimachitkara@gmail.com">aashimachitkara@gmail.com</a></p>
 </section>
 {% endblock %}

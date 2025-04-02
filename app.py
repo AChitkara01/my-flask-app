@@ -53,21 +53,19 @@ def new_post():
 @app.route("/")
 def home():
     projects = [
-        {"title": "Survey of Environmental Impacts of Plastic, Paper, and Cloth Bags",
-         "desc": "In this project, I analyzed consumer buying behavior and assessed the environmental implications of various packaging solutions. I evaluated the trade-offs between plastic, paper, and cloth bags by considering their environmental impact and consumer preferences. Through quantitative analysis, I was able to provide valuable insights into the factors driving consumer choices and offer recommendations to promote sustainable packaging practices."},
-        {"title": "Cost and Revenue Analysis of India’s Tourism Industry",
-         "desc": "This project involved forecasting revenue trends for India’s tourism sector in a post-COVID scenario and identifying potential growth opportunities. Using data analysis and econometric techniques, I assessed the impact of policy measures and economic shifts on the sector’s future growth. The project’s findings provided strategic insights that could guide investment and policy decisions, showcasing my ability to apply data-driven methodologies to solve industry challenges."}
+        {"title": "Substance Abuse in Delhi",
+         "desc": "Analyzed the rising prevalence of substance abuse in Delhi, identifying key drug trafficking hubs and trends in youth addiction, smuggling networks, and policy gaps. Evaluated the effectiveness of existing drug laws (NDPS Act, Nasha Mukt Bharat Abhiyan) and proposed policy reforms for stricter enforcement, rehabilitation access, and digital surveillance. Recommended AI-driven law enforcement strategies, expansion of rehabilitation centers, and youth engagement programs modeled on global best practices (Portugal, Iceland, Sikkim approach."},
+         {"title": "Inflation Reduction Act (IRA) 2022",
+         "desc": "Analyzed the key provisions of the Inflation Reduction Act (IRA) and its implications for economic and environmental policy such as climate action, healthcare affordability, and tax reforms. Provided insights on potential challenges and implementation strategies for effective policy outcomes."}
     ]
 
     experiences = [
-        {"title": "Research Assistant | Ashoka University, Sonipat, Haryana",
-         "desc": "As a Research Assistant at Ashoka University, I worked extensively with firm-level datasets, performing data cleaning and merging using Stata. I analyzed industry and sectoral trends by visualizing growth indicators through time-series graphs and applied econometric models to evaluate trade performance using panel data. This experience enhanced my ability to manage and analyze large datasets, improving my proficiency in econometric modeling and data-driven research."},
-        {"title": "Digital & Analytics Intern | PGP Glass Pvt. Ltd., Vadodara, Gujarat",
-         "desc": "During my internship at PGP Glass Pvt. Ltd., I processed and analyzed over 10,000 consumer records to derive actionable insights. I utilized Python libraries such as NumPy and pandas to clean and analyze the data, while Seaborn and Matplotlib were employed to create visualizations that revealed meaningful patterns and trends. The insights generated helped identify potential target markets for launching a health-focused product, demonstrating my ability to apply analytical tools to solve real-world business challenges."},
-        {"title": "Teaching Assistant | Ahmedabad University, Ahmedabad, Gujarat",
-         "desc": "As a Teaching Assistant at Ahmedabad University, I played an integral role in supporting 9 courses and guiding the academic progress of over 200 students. I was responsible for grading more than 300 assignments and exams, offering personalized feedback to enhance student performance. I also collaborated with faculty to develop lesson plans and instructional materials, incorporating interactive learning techniques to improve student engagement."},
-        {"title": "Market Research Intern | Bonafide Research, Vadodara, Gujarat",
-         "desc": "During my time at Bonafide Research, I conducted market research and consulting for 15+ clients, including Fortune 1000 companies and SMEs. I generated over 10 detailed market reports that influenced strategic decisions, leading to a 20% increase in client profitability. Through this experience, I honed my ability to translate data into actionable business insights and developed a strong foundation in market analysis and research methodologies."}
+        {"title": "Policy Research Intern | Niti Tantra",
+         "desc": "Conducting in-depth policy research on India’s 2025 Union Budget, focusing on fiscal policies,economic reforms, and sectoral allocations to assess their implications on economic growth. Drafting policy briefs and recommendations on social sector reforms, contributing to data-backed policy making discussions.including the PM SVANidhi scheme, evaluating its impact on street vendors’ financial stability and market participation."},
+        {"title": "Data Insight Head | Nblik",
+         "desc": "Led a team of 8 data interns to analyze user engagement metrics using Amplitude Analytics,identifying key behavioral trends that improved app retention by 15%. Designed weekly data reports for management, offering actionable insights to refine product development and marketing strategies."},
+        {"title": "Volunteer | Pratham Foundation, Chandigarh",
+         "desc": "Conducted on-ground data collection and analysis for the Annual Status of Education Report (ASER) 2022, assessing schooling, learning levels, and living conditions of children aged 5-16 in rural areas."},
     ]
 
     return render_template("home.html", projects=projects, experiences=experiences)
